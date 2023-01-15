@@ -1,0 +1,311 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	background-color: #FFF4E7;
+	margin-bottom: 50px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+nav {
+	max-width: 1170px;
+	padding: 20px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	font-size: 45px;
+}
+
+.links-items {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+	width: 300px;
+
+}
+
+/* banner section  */
+.banner-about {
+	max-width: 742px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.banner-about h1 {
+	font-size: 52px;
+	font-weight: 700;
+}
+
+.banner-about p {
+	margin: 20px 0;
+}
+
+.explore-more {
+	background-color: #FF900E;
+	border: none;
+	padding: 15px 20px;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.banner-img {
+	max-width: 1170px;
+	margin: 50px auto;
+	padding: 0 10px;
+}
+
+.banner-img img {
+	width: 100%;
+}
+
+/* feature section style  */
+.feature-section {
+	max-width: 1170px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.feature-images {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 24px;
+}
+
+.feature-images img {
+	width: 100%;
+}
+
+.feature-about {
+	margin: auto 0 auto 50px;
+
+}
+
+.feature-about h2 {
+	font-size: 45px;
+	color: #727272;
+}
+
+.text-black {
+	color: #000000;
+}
+
+.text-yellow {
+	color: #FF900E;
+	display: block;
+}
+
+.feature-about p {
+	margin: 24px 0;
+}
+
+/* about section style */
+.about-section {
+	max-width: 1170px;
+	margin: 50px auto;
+	display: flex;
+	gap: 30px;
+}
+
+.about-section p {
+	color: gray;
+}
+
+.about-details {
+	max-width: 500px;
+}
+
+.about-img div {
+	display: flex;
+	justify-content: end;
+}
+
+.about-img img {
+	max-width: 85%;
+}
+
+.about-title {
+	border-left: 5px solid #FF900E;
+	padding-left: 20px;
+	font-size: 35px;
+	max-width: 500px;
+	margin-bottom: 10px;
+}
+
+.about-item {
+	padding: 20px;
+	box-shadow: 5px 5px 20px rgb(205, 204, 204);
+	margin-top: 20px;
+	border-radius: 10px;
+}
+
+.about-img {
+	position: relative;
+}
+
+.experience {
+	position: absolute;
+	background-color: #FF900E;
+	padding: 30px 50px;
+	border-radius: 5px;
+	bottom: -50px;
+	color: white;
+	text-align: center;
+}
+
+.experience h1 {
+	font-size: 50px;
+	display: flex;
+	flex-direction: column;
+}
+
+.experience span {
+	font-size: 28px;
+	font-weight: 400;
+}
+
+/* fact section style */
+
+.fact-section {
+	max-width: 1170px;
+	margin: 100px auto;
+	padding: 10px;
+}
+
+.facts-section-details {
+	max-width: 500px;
+	margin-top: 20px;
+}
+
+.facts-section-details h2 {
+	font-size: 45px;
+	margin-bottom: 15px;
+}
+
+.facts-section-details p {
+	color: gray;
+}
+
+.fact-items {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+
+.fact-item {
+	padding: 40px;
+	border: 1px solid #FF900E;
+	border-radius: 8px;
+	text-align: center;
+	transition: all .5s ease-in-out;
+	cursor: pointer;
+}
+.fact-item:hover{
+	background-color: #fee8cd;
+}
+
+.fact-item:hover .fact-img{
+transform: rotate(180deg);
+transition: all .5s ease-in-out;
+}
+
+.fact-item h2 {
+	font-size: 45px;
+}
+
+/* sponser section style */
+.sponspors-section {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.sponspors-top {
+	max-width: 400px;
+	text-align: center;
+	margin: 40px auto;
+}
+
+.sponsors {
+	display: flex;
+	gap: 20px;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.footer-section {
+	background-color: #FFF4E7;
+	padding: 40px;
+	text-align: center;
+}
+
+
+/* responsive for mobile device0 */
+@media only screen and (max-width: 576px) {
+
+	header{
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+	nav{
+		flex-direction: column;
+		padding: 0 10px;
+	}
+	.logo{
+font-size: 30px;
+	}
+		.links-items{
+			flex-direction: column;
+			align-items: flex-start;
+			margin: 20px 0;
+		}
+
+	.feature-section {
+		grid-template-columns: 1fr;
+		padding: 15px;
+	}
+
+	.feature-images {
+		grid-template-columns: 1fr;
+		margin-bottom: 30px;
+	}
+
+
+	/* about section  */
+	.about-section {
+		flex-direction: column;
+		padding: 15px;
+	}
+
+	.about-img img {
+		max-width: 100%;
+	}
+
+	.experience {
+		position: static;
+		width: 300px;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+
+	.fact-items {
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.sponsors {
+		flex-direction: column;
+		align-items: center;
+	}
+
+}
